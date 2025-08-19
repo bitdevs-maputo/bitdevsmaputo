@@ -1,4 +1,259 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-07-15T22:30:10+01:00</updated><id>/feed.xml</id><title type="html">BitDevs Cotonou</title><subtitle>BitDevs is a community for those interested in discussing and participating in the research and development of Bitcoin and related protocols.</subtitle><entry xml:lang="en"><title type="html">Seminar Socratic #5</title><link href="/en/2025-07-26-socratic-seminar-5" rel="alternate" type="text/html" title="Seminar Socratic #5" /><published>2025-07-26T00:00:00+01:00</published><updated>2025-07-26T00:00:00+01:00</updated><id>/en/socratic-seminar-5</id><content type="html" xml:base="/en/2025-07-26-socratic-seminar-5">&lt;h2 id=&quot;location&quot;&gt;Location&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-08-19T01:07:55+01:00</updated><id>/feed.xml</id><title type="html">BitDevs Cotonou</title><subtitle>BitDevs is a community for those interested in discussing and participating in the research and development of Bitcoin and related protocols.</subtitle><entry xml:lang="en"><title type="html">Seminar Socratic #6</title><link href="/en/2025-08-30-socratic-seminar-6" rel="alternate" type="text/html" title="Seminar Socratic #6" /><published>2025-08-30T00:00:00+01:00</published><updated>2025-08-30T00:00:00+01:00</updated><id>/en/socratic-seminar-6</id><content type="html" xml:base="/en/2025-08-30-socratic-seminar-6">&lt;h2 id=&quot;location&quot;&gt;Location&lt;/h2&gt;
+
+&lt;p&gt;The event will be hosted at &lt;strong&gt;SOROC&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;Old Zogbo Bakey Building | ZOGBO, Cotonou | &lt;a href=&quot;https://www.google.com/maps/place/SOROC/@6.3910649,2.3913588,17z/data=!3m1!4b1!4m6!3m5!1s0x10235525ea0a9f8d:0xfd88007f0ba23d15!8m2!3d6.3910649!4d2.3913588!16s%2Fg%2F11sh2b2g3c?entry=ttu&amp;amp;g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D&quot;&gt;Map&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;announcements&quot;&gt;Announcements&lt;/h2&gt;
+
+&lt;p&gt;We are delighted to invite you to this month’s BitDevs Meetup in Cotonou!&lt;/p&gt;
+
+&lt;p&gt;Last month, we explored the different developer programs offered by &lt;a href=&quot;https://btrust.tech&quot;&gt;Btrust&lt;/a&gt; and &lt;a href=&quot;https://bitshala.org&quot;&gt;Bitshala&lt;/a&gt;, along with an introductory workshop on BTCPay Server to understand the basics of its use.&lt;/p&gt;
+
+&lt;p&gt;This month, we are going even further.&lt;/p&gt;
+
+&lt;p&gt;We will connect our BTCPay Server instance to a web application and perform live Bitcoin payments together.&lt;/p&gt;
+
+&lt;p&gt;This will be the perfect opportunity to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Deepen your practical knowledge of Bitcoin payment integration&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Network with other developers, entrepreneurs, and enthusiasts&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ask your questions and actively participate in technical discussions&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Don’t miss out on this opportunity!&lt;/p&gt;
+
+&lt;p&gt;Reserve your spot now and join the local BitDevs community for a session full of learning and hands-on practice.&lt;/p&gt;
+
+&lt;p&gt;We warmly thank our sponsor &lt;a href=&quot;https://btrust.tech&quot;&gt;Btrust&lt;/a&gt; for supporting the growth of Bitcoin Developers Community in Benin.&lt;/p&gt;
+
+&lt;h2 id=&quot;reminders&quot;&gt;Reminders&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We prefer no photos and no videos during the event&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.chathamhouse.org/about-us/chatham-house-rule&quot;&gt;Chatham House Rule&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Leave the meeting space as clean as you found it&lt;/li&gt;
+  &lt;li&gt;Suggest topics for the next Socratic Seminar! &lt;a href=&quot;/topics&quot;&gt;Where to find topics?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;topics&quot;&gt;Topics&lt;/h1&gt;
+
+&lt;p&gt;We will discuss and experiment with the topics below:&lt;/p&gt;
+
+&lt;h3 id=&quot;welcome-words&quot;&gt;Welcome Words&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/Loicbtc&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Loïc&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bitdevscotonou.org/fr/about&quot;&gt;Bitdevs Cotnou&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;news--some-updates-on-bitcoin-development&quot;&gt;News – Some updates on Bitcoin Development&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/mehounme&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;AL&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bitcoinops.org/&quot;&gt;Bitcoin Optech&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://x.com/Breez_Tech/status/1957493705058734586&quot;&gt;Breez Tech&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;workshop--advanced-btcpay-server-for-applications&quot;&gt;Workshop : Advanced BTCPay Server for Applications&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/Ramane_Boda&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Ramane&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://btcpayserver.org/&quot;&gt;BTCPay Server&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.btcpayserver.org/Development/&quot;&gt;BTCPay Server Docs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ACINQ/phoenixd&quot;&gt;Phoenixd&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.blink.sv/en/api&quot;&gt;Blink API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;upcoming-events--announcements&quot;&gt;Upcoming Events &amp;amp; Announcements&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/willy_btc&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Wilfried&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Next Meetups and Annoucements&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="en" /><summary type="html">Location</summary></entry><entry xml:lang="fr"><title type="html">Seminaire Socratique #6</title><link href="/fr/2025-08-30-socratic-seminar-6" rel="alternate" type="text/html" title="Seminaire Socratique #6" /><published>2025-08-30T00:00:00+01:00</published><updated>2025-08-30T00:00:00+01:00</updated><id>/fr/socratic-seminar-6</id><content type="html" xml:base="/fr/2025-08-30-socratic-seminar-6">&lt;h2 id=&quot;lieu&quot;&gt;Lieu&lt;/h2&gt;
+
+&lt;p&gt;L’événement se tiendra à &lt;strong&gt;SOROC&lt;/strong&gt; :&lt;/p&gt;
+
+&lt;p&gt;Ancienne boulangerie de Zogbo | Zogbo, Cotonou | &lt;a href=&quot;https://www.google.com/maps/place/SOROC/@6.3910649,2.3913588,17z/data=!3m1!4b1!4m6!3m5!1s0x10235525ea0a9f8d:0xfd88007f0ba23d15!8m2!3d6.3910649!4d2.3913588!16s%2Fg%2F11sh2b2g3c?entry=ttu&amp;amp;g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D&quot;&gt;MAP&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;annonce&quot;&gt;Annonce&lt;/h2&gt;
+
+&lt;p&gt;Nous sommes ravis de vous inviter au &lt;a href=&quot;/fr/about&quot;&gt;BitDevs Meetup&lt;/a&gt; de ce mois à Cotonou !&lt;/p&gt;
+
+&lt;p&gt;Le mois dernier, nous avons exploré les différents programmes pour développeurs qu’offrent &lt;a href=&quot;https://btrust.tech&quot;&gt;Btrust&lt;/a&gt; et &lt;a href=&quot;https://bitshala.org&quot;&gt;Bitshala&lt;/a&gt; et un atelier d’introduction au BTCPay Server pour comprendre les bases de son utilisation.&lt;/p&gt;
+
+&lt;p&gt;Ce mois-ci, nous allons encore plus loin.&lt;/p&gt;
+
+&lt;p&gt;Nous connecterons notre instance BTCPay Server à une application web et réaliserons ensemble des paiements en direct.&lt;/p&gt;
+
+&lt;p&gt;Ce sera l’occasion parfaite pour :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Approfondir vos connaissances pratiques sur l’intégration de paiements Bitcoin&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Échanger avec d’autres développeurs, entrepreneurs et passionnés&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Poser vos questions et participer activement aux discussions techniques&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ne manquez pas cette opportunité !&lt;/p&gt;
+
+&lt;p&gt;Réservez dès maintenant votre place et rejoignez la communauté BitDevs locale pour une session riche en apprentissage et en pratique.&lt;/p&gt;
+
+&lt;p&gt;Nous remercions chaleureusement notre sponsor &lt;a href=&quot;https://btrust.tech&quot;&gt;Btrust&lt;/a&gt; pour son soutien à l’émergence de la Communauté de Développeurs Bitcoin au Bénin.&lt;/p&gt;
+
+&lt;h2 id=&quot;rappels&quot;&gt;Rappels&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Nous préférons pas de photos ni de vidéos pendant l’événement&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.chathamhouse.org/about-us/chatham-house-rule&quot;&gt;Règle de Chatham House&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Laissez l’espace de réunion aussi propre que vous l’avez trouvé&lt;/li&gt;
+  &lt;li&gt;Suggérez des sujets pour le prochain Séminaire Socratique ! &lt;a href=&quot;/topics&quot;&gt;Où trouver des sujets ?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;sujets&quot;&gt;Sujets&lt;/h1&gt;
+
+&lt;p&gt;Nous discuterons et expérimenterons les topics ci-dessous :&lt;/p&gt;
+
+&lt;h3 id=&quot;mots-de-bienvenue&quot;&gt;Mots de Bienvenue&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/Loicbtc&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Loïc&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bitdevscotonou.org/fr/about&quot;&gt;Bitdevs Cotnou&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;actualités--quelques-actualités-sur-le-dévelopement-bitcoin&quot;&gt;Actualités – Quelques actualités sur le Dévelopement Bitcoin&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/mehounme&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;AL&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bitcoinops.org/&quot;&gt;Bitcoin Optech&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://x.com/Breez_Tech/status/1957493705058734586&quot;&gt;Breez Tech&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;atelier-pratique--btcpay-server-avancé-pour-applications&quot;&gt;Atelier pratique : BTCPay Server avancé pour applications&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/Ramane_Boda&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Ramane&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://btcpayserver.org/&quot;&gt;BTCPay Server&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.btcpayserver.org/Development/&quot;&gt;BTCPay Server Docs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ACINQ/phoenixd&quot;&gt;Phoenixd&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.blink.sv/en/api&quot;&gt;Blink API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;événements-à-venir--annonces&quot;&gt;Événements à Venir &amp;amp; Annonces&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/willy_btc&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Wilfried&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Annonce et Prochains Meetups&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="fr" /><summary type="html">Lieu</summary></entry><entry xml:lang="fr"><title type="html">Seminaire Socratique #5</title><link href="/fr/2025-07-26-socratic-seminar-5" rel="alternate" type="text/html" title="Seminaire Socratique #5" /><published>2025-07-26T00:00:00+01:00</published><updated>2025-07-26T00:00:00+01:00</updated><id>/fr/socratic-seminar-5</id><content type="html" xml:base="/fr/2025-07-26-socratic-seminar-5">&lt;h2 id=&quot;lieu&quot;&gt;Lieu&lt;/h2&gt;
+
+&lt;p&gt;L’événement se tiendra à &lt;strong&gt;SOROC&lt;/strong&gt; :&lt;/p&gt;
+
+&lt;p&gt;Ancienne boulangerie de Zogbo | Zogbo, Cotonou | &lt;a href=&quot;https://www.google.com/maps/place/SOROC/@6.3910649,2.3913588,17z/data=!3m1!4b1!4m6!3m5!1s0x10235525ea0a9f8d:0xfd88007f0ba23d15!8m2!3d6.3910649!4d2.3913588!16s%2Fg%2F11sh2b2g3c?entry=ttu&amp;amp;g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D&quot;&gt;MAP&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;annonce&quot;&gt;Annonce&lt;/h2&gt;
+
+&lt;p&gt;Nous sommes ravis de vous inviter au &lt;a href=&quot;/fr/about&quot;&gt;Séminaire Socratique&lt;/a&gt; de ce mois!&lt;/p&gt;
+
+&lt;p&gt;Que vous soyez développeur full-time, part-time, entrepreneur, ou simplement curieux de découvrir l’univers technique de Bitcoin, ce meetup est pour vous.&lt;/p&gt;
+
+&lt;p&gt;Ce mois-ci, nous aurons un programme riche en apprentissage et en partage. Une présentation de BitDevs Cotonou et de Btrust, notre sponsor, pour les nouveaux membres, une intervention de Bitshala, une école de développement Bitcoin basée en Inde, pour découvrir leur approche et leurs opportunités de formation et un atelier pratique sur l’intégration de paiements Bitcoin pour les commerces, à travers BTCPay Server et l’API de Blink.&lt;/p&gt;
+
+&lt;p&gt;Et pour finir, un cocktail de networking pour échanger librement entre passionnés.&lt;/p&gt;
+
+&lt;p&gt;Ce séminaire est un moment privilégié pour poser vos questions, contribuer à la réflexion collective, et connecter avec la communauté locale Bitcoin.&lt;/p&gt;
+
+&lt;p&gt;Nous remercions chaleureusement notre sponsor &lt;a href=&quot;https://btrust.tech&quot;&gt;Btrust&lt;/a&gt; pour son soutien à l’émergence d’un écosystème Bitcoin libre et décentralisé au Bénin.&lt;/p&gt;
+
+&lt;h2 id=&quot;rappels&quot;&gt;Rappels&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Nous préférons pas de photos ni de vidéos pendant l’événement&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.chathamhouse.org/about-us/chatham-house-rule&quot;&gt;Règle de Chatham House&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Laissez l’espace de réunion aussi propre que vous l’avez trouvé&lt;/li&gt;
+  &lt;li&gt;Suggérez des sujets pour le prochain Séminaire Socratique ! &lt;a href=&quot;/topics&quot;&gt;Où trouver des sujets ?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;sujets&quot;&gt;Sujets&lt;/h1&gt;
+
+&lt;p&gt;Nous discuterons et expérimenterons les topics ci-dessous :&lt;/p&gt;
+
+&lt;h3 id=&quot;présentation-bitdevs-cotonou-et-btrust&quot;&gt;Présentation BitDevs Cotonou et Btrust&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/mehounme&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Alphonse&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bitdevscotonou.org/fr/about&quot;&gt;Bitdevs Cotnou&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://btrust.tech&quot;&gt;Btrust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;bitshala--lécole-des-développeurs-bitcoin&quot;&gt;Bitshala – L’école des Développeurs Bitcoin&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/RajarshiMaitra&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Raj&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://x.com/bitshala_org&quot;&gt;Bitshala&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;atelier-pratique--btcpay-server--blink-api-pour-les-entreprises&quot;&gt;Atelier pratique : BTCPay Server &amp;amp; Blink API pour les entreprises&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/Ramane_Boda&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Ramane&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://btcpayserver.org/&quot;&gt;BTCPay Server&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.blink.sv/en/api&quot;&gt;Blink API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;événements-à-venir--annonces&quot;&gt;Événements à Venir &amp;amp; Annonces&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/Loicbtc&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Loïc&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Annonce et Prochains Meetups&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="fr" /><summary type="html">Lieu</summary></entry><entry xml:lang="en"><title type="html">Seminar Socratic #5</title><link href="/en/2025-07-26-socratic-seminar-5" rel="alternate" type="text/html" title="Seminar Socratic #5" /><published>2025-07-26T00:00:00+01:00</published><updated>2025-07-26T00:00:00+01:00</updated><id>/en/socratic-seminar-5</id><content type="html" xml:base="/en/2025-07-26-socratic-seminar-5">&lt;h2 id=&quot;location&quot;&gt;Location&lt;/h2&gt;
 
 &lt;p&gt;The event will be hosted at &lt;strong&gt;SOROC&lt;/strong&gt;:&lt;/p&gt;
 
@@ -73,80 +328,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;&quot;&gt;Next Meetups and Annoucements&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="en" /><summary type="html">Location</summary></entry><entry xml:lang="fr"><title type="html">Seminaire Socratique #5</title><link href="/fr/2025-07-26-socratic-seminar-5" rel="alternate" type="text/html" title="Seminaire Socratique #5" /><published>2025-07-26T00:00:00+01:00</published><updated>2025-07-26T00:00:00+01:00</updated><id>/fr/socratic-seminar-5</id><content type="html" xml:base="/fr/2025-07-26-socratic-seminar-5">&lt;h2 id=&quot;lieu&quot;&gt;Lieu&lt;/h2&gt;
-
-&lt;p&gt;L’événement se tiendra à &lt;strong&gt;SOROC&lt;/strong&gt; :&lt;/p&gt;
-
-&lt;p&gt;Ancienne boulangerie de Zogbo | Zogbo, Cotonou | &lt;a href=&quot;https://www.google.com/maps/place/SOROC/@6.3910649,2.3913588,17z/data=!3m1!4b1!4m6!3m5!1s0x10235525ea0a9f8d:0xfd88007f0ba23d15!8m2!3d6.3910649!4d2.3913588!16s%2Fg%2F11sh2b2g3c?entry=ttu&amp;amp;g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D&quot;&gt;MAP&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;annonce&quot;&gt;Annonce&lt;/h2&gt;
-
-&lt;p&gt;Nous sommes ravis de vous inviter au &lt;a href=&quot;/fr/about&quot;&gt;Séminaire Socratique&lt;/a&gt; de ce mois!&lt;/p&gt;
-
-&lt;p&gt;Que vous soyez développeur full-time, part-time, entrepreneur, ou simplement curieux de découvrir l’univers technique de Bitcoin, ce meetup est pour vous.&lt;/p&gt;
-
-&lt;p&gt;Ce mois-ci, nous aurons un programme riche en apprentissage et en partage. Une présentation de BitDevs Cotonou et de Btrust, notre sponsor, pour les nouveaux membres, une intervention de Bitshala, une école de développement Bitcoin basée en Inde, pour découvrir leur approche et leurs opportunités de formation et un atelier pratique sur l’intégration de paiements Bitcoin pour les commerces, à travers BTCPay Server et l’API de Blink.&lt;/p&gt;
-
-&lt;p&gt;Et pour finir, un cocktail de networking pour échanger librement entre passionnés.&lt;/p&gt;
-
-&lt;p&gt;Ce séminaire est un moment privilégié pour poser vos questions, contribuer à la réflexion collective, et connecter avec la communauté locale Bitcoin.&lt;/p&gt;
-
-&lt;p&gt;Nous remercions chaleureusement notre sponsor &lt;a href=&quot;https://btrust.tech&quot;&gt;Btrust&lt;/a&gt; pour son soutien à l’émergence d’un écosystème Bitcoin libre et décentralisé au Bénin.&lt;/p&gt;
-
-&lt;h2 id=&quot;rappels&quot;&gt;Rappels&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Nous préférons pas de photos ni de vidéos pendant l’événement&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.chathamhouse.org/about-us/chatham-house-rule&quot;&gt;Règle de Chatham House&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Laissez l’espace de réunion aussi propre que vous l’avez trouvé&lt;/li&gt;
-  &lt;li&gt;Suggérez des sujets pour le prochain Séminaire Socratique ! &lt;a href=&quot;/topics&quot;&gt;Où trouver des sujets ?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;sujets&quot;&gt;Sujets&lt;/h1&gt;
-
-&lt;p&gt;Nous discuterons et expérimenterons les topics ci-dessous :&lt;/p&gt;
-
-&lt;h3 id=&quot;présentation-bitdevs-cotonou-et-btrust&quot;&gt;Présentation BitDevs Cotonou et Btrust&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;MC: &lt;a href=&quot;https://x.com/mehounme&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Alphonse&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://bitdevscotonou.org/fr/about&quot;&gt;Bitdevs Cotnou&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://btrust.tech&quot;&gt;Btrust&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;bitshala--lécole-des-développeurs-bitcoin&quot;&gt;Bitshala – L’école des Développeurs Bitcoin&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;MC: &lt;a href=&quot;https://x.com/RajarshiMaitra&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Raj&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://x.com/bitshala_org&quot;&gt;Bitshala&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;atelier-pratique--btcpay-server--blink-api-pour-les-entreprises&quot;&gt;Atelier pratique : BTCPay Server &amp;amp; Blink API pour les entreprises&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;MC: &lt;a href=&quot;https://x.com/Ramane_Boda&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Ramane&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://btcpayserver.org/&quot;&gt;BTCPay Server&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.blink.sv/en/api&quot;&gt;Blink API&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;événements-à-venir--annonces&quot;&gt;Événements à Venir &amp;amp; Annonces&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;MC: &lt;a href=&quot;https://x.com/Loicbtc&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Loïc&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Annonce et Prochains Meetups&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="fr" /><summary type="html">Lieu</summary></entry><entry xml:lang="fr"><title type="html">Seminaire Socratique #4</title><link href="/fr/2025-06-21-socratic-seminar-4" rel="alternate" type="text/html" title="Seminaire Socratique #4" /><published>2025-06-21T00:00:00+01:00</published><updated>2025-06-21T00:00:00+01:00</updated><id>/fr/socratic-seminar-4</id><content type="html" xml:base="/fr/2025-06-21-socratic-seminar-4">&lt;h2 id=&quot;lieu&quot;&gt;Lieu&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="en" /><summary type="html">Location</summary></entry><entry xml:lang="fr"><title type="html">Seminaire Socratique #4</title><link href="/fr/2025-06-21-socratic-seminar-4" rel="alternate" type="text/html" title="Seminaire Socratique #4" /><published>2025-06-21T00:00:00+01:00</published><updated>2025-06-21T00:00:00+01:00</updated><id>/fr/socratic-seminar-4</id><content type="html" xml:base="/fr/2025-06-21-socratic-seminar-4">&lt;h2 id=&quot;lieu&quot;&gt;Lieu&lt;/h2&gt;
 
 &lt;p&gt;L’événement se tiendra à &lt;strong&gt;SOROC&lt;/strong&gt; :&lt;/p&gt;
 
@@ -267,66 +449,6 @@ Special thanks to our sponsor &lt;a href=&quot;http://btrust.tech/&quot;&gt;Btru
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;&quot;&gt;Next Meetups and Annoucements&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="en" /><summary type="html">Location</summary></entry><entry xml:lang="en"><title type="html">Socratic Seminar #3</title><link href="/en/2025-05-10-socratic-seminar-3" rel="alternate" type="text/html" title="Socratic Seminar #3" /><published>2025-05-10T00:00:00+01:00</published><updated>2025-05-10T00:00:00+01:00</updated><id>/en/socratic-seminar-3</id><content type="html" xml:base="/en/2025-05-10-socratic-seminar-3">&lt;h2 id=&quot;location&quot;&gt;Location&lt;/h2&gt;
-
-&lt;p&gt;The event will be hosted at &lt;strong&gt;Ronelk Cosmetics&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p&gt;Road before Orca Déco leaving “16 Ampoules” for Tokpa Market | Sikècodji, Cotonou | &lt;a href=&quot;https://maps.app.goo.gl/4MWFaaiG7PRBnbi88&quot;&gt;Map&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;announcements&quot;&gt;Announcements&lt;/h2&gt;
-
-&lt;p&gt;We are glad to invite you to this month &lt;a href=&quot;/about&quot;&gt;Socratic Seminar&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;Whether you are a full time developer, part-time developer, or simply curious, you are invited.&lt;/p&gt;
-
-&lt;p&gt;At this meetup we’ll cover the latest developments on Bitcoin and do a hands-on workshop on understanding Bitcoin transactions with &lt;a href=&quot;https://bitcoindevs.xyz/decoding&quot;&gt;Decoding Bitcoin&lt;/a&gt; platform.&lt;/p&gt;
-
-&lt;p&gt;Please join us for another exploration of Bitcoin’s technical rabbit hole. Book your seat &lt;a href=&quot;https://lu.ma/mh5kgrzi&quot;&gt;HERE&lt;/a&gt; and check the agenda below.&lt;/p&gt;
-
-&lt;p&gt;We look forward to seeing you.&lt;/p&gt;
-
-&lt;p&gt;A special thanks to our sponsor &lt;a href=&quot;http://btrust.tech/&quot;&gt;Btrust&lt;/a&gt; for their support.&lt;/p&gt;
-
-&lt;h2 id=&quot;reminders&quot;&gt;Reminders&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;We prefer no photos and no videos during the event&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.chathamhouse.org/about-us/chatham-house-rule&quot;&gt;Chatham House Rule&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Leave the meeting space as clean as you found it&lt;/li&gt;
-  &lt;li&gt;Suggest topics for the next Socratic Seminar! &lt;a href=&quot;/topics&quot;&gt;Where to find topics?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;topics&quot;&gt;Topics&lt;/h1&gt;
-
-&lt;h4 id=&quot;latest-developments-on-bitcoin&quot;&gt;Latest developments on Bitcoin&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;MC: &lt;a href=&quot;https://x.com/mehounme&quot;&gt;Alphonse&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://x.com/wk057/status/1917235710781690171&quot;&gt;bitcoin/bitcoin #32359 Remove arbitrary limits on OP_Return&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://x.com/bitcoinoptech/status/1915722446037983484&quot;&gt;Bitcoin Optech newsletter #351 &amp;amp; #352&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;workshop--understanding-bitcoin-transactions-with-decoding-bitcoin&quot;&gt;Workshop : Understanding Bitcoin transactions with Decoding Bitcoin&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;MC: &lt;a href=&quot;https://x.com/heyolaniran&quot;&gt;Abdias&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://bitcoindevs.xyz/decoding&quot;&gt;Bitcoin transaction with Decoding Bitcoin&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;upcoming-events--announcements&quot;&gt;Upcoming Events &amp;amp; Announcements&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;MC: &lt;a href=&quot;https://x.com/Loicbtc&quot;&gt;Loïc&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Next Meetups and Annoucements&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="en" /><summary type="html">Location</summary></entry><entry xml:lang="fr"><title type="html">Seminaire Socratique #3</title><link href="/fr/2025-05-10-socratic-seminar-3" rel="alternate" type="text/html" title="Seminaire Socratique #3" /><published>2025-05-10T00:00:00+01:00</published><updated>2025-05-10T00:00:00+01:00</updated><id>/fr/socratic-seminar-3</id><content type="html" xml:base="/fr/2025-05-10-socratic-seminar-3">&lt;h2 id=&quot;lieu&quot;&gt;Lieu&lt;/h2&gt;
 
 &lt;p&gt;L’événement se tiendra à &lt;strong&gt;Ronelk Cosmetics&lt;/strong&gt; :&lt;/p&gt;
@@ -387,7 +509,67 @@ Special thanks to our sponsor &lt;a href=&quot;http://btrust.tech/&quot;&gt;Btru
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;&quot;&gt;Annonce et Prochains Meetups&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="fr" /><summary type="html">Lieu</summary></entry><entry xml:lang="en"><title type="html">Socratic Seminar #2</title><link href="/en/2025-04-19-socratic-seminar-2" rel="alternate" type="text/html" title="Socratic Seminar #2" /><published>2025-04-19T00:00:00+01:00</published><updated>2025-04-19T00:00:00+01:00</updated><id>/en/socratic-seminar-2</id><content type="html" xml:base="/en/2025-04-19-socratic-seminar-2">&lt;h2 id=&quot;location&quot;&gt;Location&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="fr" /><summary type="html">Lieu</summary></entry><entry xml:lang="en"><title type="html">Socratic Seminar #3</title><link href="/en/2025-05-10-socratic-seminar-3" rel="alternate" type="text/html" title="Socratic Seminar #3" /><published>2025-05-10T00:00:00+01:00</published><updated>2025-05-10T00:00:00+01:00</updated><id>/en/socratic-seminar-3</id><content type="html" xml:base="/en/2025-05-10-socratic-seminar-3">&lt;h2 id=&quot;location&quot;&gt;Location&lt;/h2&gt;
+
+&lt;p&gt;The event will be hosted at &lt;strong&gt;Ronelk Cosmetics&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;Road before Orca Déco leaving “16 Ampoules” for Tokpa Market | Sikècodji, Cotonou | &lt;a href=&quot;https://maps.app.goo.gl/4MWFaaiG7PRBnbi88&quot;&gt;Map&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;announcements&quot;&gt;Announcements&lt;/h2&gt;
+
+&lt;p&gt;We are glad to invite you to this month &lt;a href=&quot;/about&quot;&gt;Socratic Seminar&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;Whether you are a full time developer, part-time developer, or simply curious, you are invited.&lt;/p&gt;
+
+&lt;p&gt;At this meetup we’ll cover the latest developments on Bitcoin and do a hands-on workshop on understanding Bitcoin transactions with &lt;a href=&quot;https://bitcoindevs.xyz/decoding&quot;&gt;Decoding Bitcoin&lt;/a&gt; platform.&lt;/p&gt;
+
+&lt;p&gt;Please join us for another exploration of Bitcoin’s technical rabbit hole. Book your seat &lt;a href=&quot;https://lu.ma/mh5kgrzi&quot;&gt;HERE&lt;/a&gt; and check the agenda below.&lt;/p&gt;
+
+&lt;p&gt;We look forward to seeing you.&lt;/p&gt;
+
+&lt;p&gt;A special thanks to our sponsor &lt;a href=&quot;http://btrust.tech/&quot;&gt;Btrust&lt;/a&gt; for their support.&lt;/p&gt;
+
+&lt;h2 id=&quot;reminders&quot;&gt;Reminders&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We prefer no photos and no videos during the event&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.chathamhouse.org/about-us/chatham-house-rule&quot;&gt;Chatham House Rule&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Leave the meeting space as clean as you found it&lt;/li&gt;
+  &lt;li&gt;Suggest topics for the next Socratic Seminar! &lt;a href=&quot;/topics&quot;&gt;Where to find topics?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;topics&quot;&gt;Topics&lt;/h1&gt;
+
+&lt;h4 id=&quot;latest-developments-on-bitcoin&quot;&gt;Latest developments on Bitcoin&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/mehounme&quot;&gt;Alphonse&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://x.com/wk057/status/1917235710781690171&quot;&gt;bitcoin/bitcoin #32359 Remove arbitrary limits on OP_Return&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://x.com/bitcoinoptech/status/1915722446037983484&quot;&gt;Bitcoin Optech newsletter #351 &amp;amp; #352&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;workshop--understanding-bitcoin-transactions-with-decoding-bitcoin&quot;&gt;Workshop : Understanding Bitcoin transactions with Decoding Bitcoin&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/heyolaniran&quot;&gt;Abdias&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bitcoindevs.xyz/decoding&quot;&gt;Bitcoin transaction with Decoding Bitcoin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;upcoming-events--announcements&quot;&gt;Upcoming Events &amp;amp; Announcements&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;MC: &lt;a href=&quot;https://x.com/Loicbtc&quot;&gt;Loïc&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Next Meetups and Annoucements&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="en" /><summary type="html">Location</summary></entry><entry xml:lang="en"><title type="html">Socratic Seminar #2</title><link href="/en/2025-04-19-socratic-seminar-2" rel="alternate" type="text/html" title="Socratic Seminar #2" /><published>2025-04-19T00:00:00+01:00</published><updated>2025-04-19T00:00:00+01:00</updated><id>/en/socratic-seminar-2</id><content type="html" xml:base="/en/2025-04-19-socratic-seminar-2">&lt;h2 id=&quot;location&quot;&gt;Location&lt;/h2&gt;
 
 &lt;p&gt;The event will be hosted at &lt;strong&gt;J Reside&lt;/strong&gt;:&lt;/p&gt;
 
@@ -507,126 +689,4 @@ Special thanks to our sponsor &lt;a href=&quot;http://btrust.tech/&quot;&gt;Btru
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;&quot;&gt;Annonce et Prochains Meetups&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="fr" /><summary type="html">Lieu</summary></entry><entry xml:lang="en"><title type="html">Socratic Seminar #1</title><link href="/en/2025-03-22-socratic-seminar-1" rel="alternate" type="text/html" title="Socratic Seminar #1" /><published>2025-03-22T00:00:00+01:00</published><updated>2025-03-22T00:00:00+01:00</updated><id>/en/socratic-seminar-1</id><content type="html" xml:base="/en/2025-03-22-socratic-seminar-1">&lt;h2 id=&quot;location&quot;&gt;Location&lt;/h2&gt;
-
-&lt;p&gt;The event will be hosted at &lt;strong&gt;J Reside&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p&gt;Road of Ecobank | Gbèdjromèdé, Cotonou | &lt;a href=&quot;https://maps.app.goo.gl/ukULnxssWyySSuxLA&quot;&gt;Map&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;announcements&quot;&gt;Announcements&lt;/h2&gt;
-
-&lt;p&gt;We are glad to invite you to this month &lt;a href=&quot;/about&quot;&gt;Socratic Seminar&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;Whether you are a developer, an aspiring developer, or simply curious, you are welcome at our meetup.&lt;/p&gt;
-
-&lt;p&gt;During this meetup, we will cover two main topics: Career opportunities for Bitcoin developers and How Bitcoin works technically.&lt;/p&gt;
-
-&lt;p&gt;If you’re interested in any of these topics or want to learn more about Bitcoin’s technical side, book your spot &lt;a href=&quot;https://lu.ma/ic2tftlz&quot;&gt;HERE&lt;/a&gt; and check out the agenda below.&lt;/p&gt;
-
-&lt;p&gt;We look forward to seeing you.&lt;/p&gt;
-
-&lt;p&gt;A special thanks to our sponsor &lt;a href=&quot;http://btrust.tech/&quot;&gt;Btrust&lt;/a&gt; for their support.&lt;/p&gt;
-
-&lt;h2 id=&quot;reminders&quot;&gt;Reminders&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;We prefer no photos and no videos during the event&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.chathamhouse.org/about-us/chatham-house-rule&quot;&gt;Chatham House Rule&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Leave the meeting space as clean as you found it&lt;/li&gt;
-  &lt;li&gt;Suggest topics for the next Socratic Seminar! &lt;a href=&quot;/topics&quot;&gt;Where to find topics?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;topics&quot;&gt;Topics&lt;/h1&gt;
-
-&lt;h4 id=&quot;career-opportunities-for-developers&quot;&gt;Career opportunities for Developers&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;MC: Alphonse&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Skills&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Career Paths&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jonatack.github.io/articles/how-to-contribute-pull-requests-to-bitcoin-core&quot;&gt;Contributing to Bitcoin : Case of Bitcoin Core&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;workshop--how-does-bitcoin-work-&quot;&gt;Workshop : How does Bitcoin work ?&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;MC: Abdias&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://savingsatoshi.com/en&quot;&gt;Understand how Bitcoin works by Saving Satoshi&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;upcoming-events--announcements&quot;&gt;Upcoming Events &amp;amp; Announcements&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;MC: Loïc&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Next Meetups and Annoucements&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="en" /><summary type="html">Location</summary></entry><entry xml:lang="fr"><title type="html">Seminaire Socratique #1</title><link href="/fr/2025-03-22-socratic-seminar-1" rel="alternate" type="text/html" title="Seminaire Socratique #1" /><published>2025-03-22T00:00:00+01:00</published><updated>2025-03-22T00:00:00+01:00</updated><id>/fr/socratic-seminar-1</id><content type="html" xml:base="/fr/2025-03-22-socratic-seminar-1">&lt;h2 id=&quot;lieu&quot;&gt;Lieu&lt;/h2&gt;
-
-&lt;p&gt;L’événement se tiendra au &lt;strong&gt;J Reside&lt;/strong&gt; :&lt;/p&gt;
-
-&lt;p&gt;Route d’Ecobank | Gbèdjromèdé, Cotonou | &lt;a href=&quot;https://maps.app.goo.gl/ukULnxssWyySSuxLA&quot;&gt;MAP&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;annonce&quot;&gt;Annonce&lt;/h2&gt;
-
-&lt;p&gt;Nous sommes ravi de vous inviter au &lt;a href=&quot;/about&quot;&gt;Séminaire Socratiquie&lt;/a&gt; de ce mois!&lt;/p&gt;
-
-&lt;p&gt;​Que vous soyez développeur, développeur en devenir ou simple curieux, vous avez votre place à notre meetup.&lt;/p&gt;
-
-&lt;p&gt;​Lors de ce meetup nous aborderons deux sujets principaux : Opportunités de carrière pour développeurs sur Bitcoin et Comment fonctionne Bitcoin techniquement.&lt;/p&gt;
-
-&lt;p&gt;​Si un des sujets vous intéresse ou si vous souhaitez apprendre plus sur la partie technique de Bitcoin, prenez le rendez-vous &lt;a href=&quot;https://lu.ma/ic2tftlz&quot;&gt;ICI&lt;/a&gt; et consultez l’agenda ci-dessous.&lt;/p&gt;
-
-&lt;p&gt;​Nous avons hâte de vous retrouver.&lt;/p&gt;
-
-&lt;p&gt;Nous remercions tout particulièrement notre sponsor &lt;a href=&quot;http://btrust.tech/&quot;&gt;Btrust&lt;/a&gt; pour son soutien.&lt;/p&gt;
-
-&lt;h2 id=&quot;rappels&quot;&gt;Rappels&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Nous préférons pas de photos ni de vidéos pendant l’événement&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.chathamhouse.org/about-us/chatham-house-rule&quot;&gt;Règle de Chatham House&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Laissez l’espace de réunion aussi propre que vous l’avez trouvé&lt;/li&gt;
-  &lt;li&gt;Suggérez des sujets pour le prochain Séminaire Socratique ! &lt;a href=&quot;/topics&quot;&gt;Où trouver des sujets ?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;sujets&quot;&gt;Sujets&lt;/h1&gt;
-
-&lt;h3 id=&quot;opportunités-de-carrière-pour-devs-sur-bitcoin&quot;&gt;​Opportunités de carrière pour devs sur Bitcoin&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;MC: Alphonse&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Compétences à avoir&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Options de carrières&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://jonatack.github.io/articles/how-to-contribute-pull-requests-to-bitcoin-core&quot;&gt;Contribuer à Bitcoin : Cas de Bitcoin Core&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;séance-pratique--comment-fonctionne-bitcoin-&quot;&gt;Séance Pratique : Comment fonctionne Bitcoin ?&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;MC: Abdias&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://savingsatoshi.com/fr&quot;&gt;Comprendre Bitcoin en sauvant Satoshi&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;événements-à-venir--annonces&quot;&gt;Événements à Venir &amp;amp; Annonces&lt;/h4&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;MC: Loïc&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Next Meetups and Annoucements&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="fr" /><summary type="html">Lieu</summary></entry></feed>
