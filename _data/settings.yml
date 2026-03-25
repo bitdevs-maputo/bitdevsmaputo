@@ -1,0 +1,9 @@
+title: 'BitDevs Maputo'
+tagline: 'BitDevs Maputo is a community for developers, researchers, and enthusiasts interested in the research, development, and practical application of Bitcoin, Nostr, and related protocols. We host discussions, workshops, and collaborative projects to advance knowledge and adoption of these technologies.'
+
+menu:
+  - {name: 'About', url: '/about'}
+  - {name: 'Events', url: '/events'}
+  - {name: 'Blog', url: '/blog'}
+  - {name: 'Contacts', url: '/contacts'}
+
