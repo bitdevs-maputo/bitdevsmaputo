@@ -11,6 +11,7 @@ GEM
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
+    erb (6.0.7)
     eventmachine (1.2.7)
     ffi (1.15.0)
     forwardable-extended (2.6.0)
@@ -76,6 +77,7 @@ DEPENDENCIES
   base64
   bigdecimal
   csv
+  erb
   jekyll-feed
   jekyll-paginate
   jekyll-seo-tag
