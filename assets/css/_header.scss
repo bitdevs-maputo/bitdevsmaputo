@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
   }
 
   &-logo {
@@ -22,8 +23,15 @@
     }
   }
 
+  &-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
   &-nav {
     display: flex;
+    align-items: center;
     font-size: 1.3rem;
 
     @media (max-width: $small-screen) {
@@ -31,13 +39,48 @@
     }
 
     a {
-      color: #333;
+      color: var(--font-color);
       opacity: 0.9;
       margin-left: 1.5rem;
 
       &:hover {
         color: $primary-color;
         opacity: 1;
+      }
+    }
+  }
+
+  @media (max-width: $mid-screen) {
+    &-inner {
+      align-items: flex-start;
+    }
+
+    &-actions {
+      position: relative;
+    }
+
+    &-nav {
+      position: absolute;
+      top: calc(100% + 0.75rem);
+      right: 0;
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+      min-width: 14rem;
+      padding: 0.75rem;
+      background: var(--background-color);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 0.75rem;
+      box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.12);
+      z-index: 10;
+
+      &.is-open {
+        display: flex;
+      }
+
+      a {
+        margin-left: 0;
       }
     }
   }

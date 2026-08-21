@@ -1,51 +1,96 @@
-// Theme toggle button
-.theme-toggle {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  margin-left: 1.75rem;
-  margin-top: 5px;
+.theme-toggle,
+.nav-toggle {
+  appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: transparent;
   color: var(--font-color);
-  opacity: 0.4;
-  position: relative;
-  
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+
   &:hover {
-    opacity: 1;
+    border-color: var(--primary-color);
     color: var(--primary-color);
+    transform: translateY(-1px);
+  }
+}
+
+.theme-toggle {
+  position: relative;
+  margin-left: 1rem;
+
+  .theme-icon {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: 1.15rem;
+    transition: opacity 0.2s ease, transform 0.2s ease;
   }
 
-  .sun-icon,
-  .moon-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+  .theme-icon--sun {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .theme-icon--moon {
+    opacity: 0;
+    transform: scale(0.7) rotate(-30deg);
   }
 }
 
 [data-theme="dark"] {
-  .sun-icon {
+  .theme-toggle .theme-icon--sun {
     opacity: 0;
-    transform: rotate(90deg);
+    transform: scale(0.7) rotate(30deg);
   }
-  
-  .moon-icon {
+
+  .theme-toggle .theme-icon--moon {
     opacity: 1;
-    transform: rotate(0);
+    transform: scale(1) rotate(0);
   }
 }
 
 [data-theme="light"] {
-  .sun-icon {
+  .theme-toggle .theme-icon--sun {
     opacity: 1;
-    transform: rotate(0);
+    transform: scale(1) rotate(0);
   }
-  
-  .moon-icon {
+
+  .theme-toggle .theme-icon--moon {
     opacity: 0;
-    transform: rotate(-90deg);
+    transform: scale(0.7) rotate(-30deg);
   }
-} 
+}
+
+.nav-toggle {
+  display: none;
+  position: relative;
+  transition: transform 0.25s ease, border-color 0.2s ease, color 0.2s ease;
+
+  .nav-toggle-icon {
+    font-size: 1.2rem;
+    transition: transform 0.25s ease;
+  }
+
+  &.is-open {
+    transform: rotate(90deg);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+
+    .nav-toggle-icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+}
