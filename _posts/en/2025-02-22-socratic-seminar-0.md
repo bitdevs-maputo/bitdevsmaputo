@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false
 type: socratic
 title: "Socratic Seminar #0"
 meetup: "https://lu.ma/y7cff6uz/"

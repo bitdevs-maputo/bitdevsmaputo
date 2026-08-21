@@ -3,6 +3,8 @@ layout: post
 published: true
 date: 2026-03-07
 type: socratic
+lang: "en"
+permalink: /en/2026-03-07-bitdevs-maputo-bitcoin-meetup-anita
 title: "BitDevs Maputo - Bitcoin Meet-up com a Anita em Maputo"
 meetup: "https://lu.ma/0vqvo5oc"
 ---
@@ -11,7 +13,8 @@ meetup: "https://lu.ma/0vqvo5oc"
 
 The event was hosted at **ONOMO Hotel Maputo**:
 
-Maputo, Mozambique | [Map](https://www.google.com/maps/search/?api=1&query=ONOMO%20Hotel%20Maputo&query_place_id=ChIJp-TDWwWb5h4RrS_ENbCMlMo)
+Maputo, Mozambique | 
+[Map](https://www.google.com/maps/search/?api=1&query=ONOMO%20Hotel%20Maputo&query_place_id=ChIJp-TDWwWb5h4RrS_ENbCMlMo)
 
 # Announcements
 
