@@ -29,7 +29,7 @@ exclude_from_localizations: ["assets", "css", "js", "img","fonts"]
 # defaults configs 
 defaults:
   - scope:
-      path: "_posts/en"
+      path: "_posts"
     values:
       lang: "en"
       category: "en"
