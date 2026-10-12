@@ -1,9 +1,12 @@
 ---
 layout: post
-published: false
+published: true
+date: 2026-10-17
 type: socratic
 title: "Socratic Seminar 01: Who Really Runs Bitcoin?"
 meetup: "https://luma.com/znp0x852"
+permalink: /en/2026-10-17-socratic-seminar-01
+lang: "en"
 ---
 
 ## Location

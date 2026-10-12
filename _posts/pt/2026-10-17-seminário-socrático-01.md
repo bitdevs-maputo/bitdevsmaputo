@@ -1,9 +1,12 @@
 ---
 layout: post
-published: false
+published: true
+date: 2026-10-17
 type: socratic
 title: "Seminário Socrático 01: Quem manda realmente no Bitcoin?"
 meetup: "https://luma.com/znp0x852"
+permalink: /pt/2026-10-17-seminário-socrático-01.md
+lang: "pt"
 ---
 
 ## Local
