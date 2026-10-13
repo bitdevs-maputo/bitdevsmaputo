@@ -3,6 +3,8 @@
       url: "/pt/about"
     - name: "Eventos"
       url: "/pt/events"
+    - name: "Blog"
+      url: "/pt/blog"
     - name: "Contatos"
       url: "/pt/contacts"
       
