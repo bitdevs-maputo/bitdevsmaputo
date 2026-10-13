@@ -1,5 +1,8 @@
 ---
 layout: default
+title: "BitDevs Cities"
+description: "Directório de comunidades e meetups BitDevs em África e pelo mundo."
+image: /assets/img/og-preview.png
 ---
 
 As Bitcoin adoption grows, so do local communities of like-minded enthusiasts and builders eager to connect and learn. More cities are now hosting Bitdevs Meetups to foster these connections. Below is a growing list of these meetups in Africa.

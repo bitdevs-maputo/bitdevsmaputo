@@ -1,17 +1,19 @@
 ---
 layout: default
-title: Meetings
+title: "Eventos | Events"
+description: "Seminários Socráticos e encontros técnicos da BitDevs Maputo em Moçambique."
+image: /assets/img/og-preview.png
 ---
-{{ page.lang }}
+
 <div class="Home">
   <div class="Home-posts">
-    <h2 class="Home-posts-title">Socratic Seminars | Seminaire Socratique</h2>
+    <h2 class="Home-posts-title">Seminários Socráticos | Socratic Seminars</h2>
     {% for post in site.posts %}
-      {% if post.type == "socratic" %}
+      {% if post.category == "event" and post.type == "socratic" %}
         <div class="Home-posts-post">
           <span class="Home-posts-post-date">{{ post.date | date_to_string }}</span>
           <span class="Home-posts-post-arrow">&raquo;</span>
-          <a class="Home-posts-post-title" href="{{ post.url }}">{{ post.title }} - {{post.lang | upcase}}</a>
+          <a class="Home-posts-post-title" href="{{ post.url }}">{{ post.title }} - {{ post.lang | upcase }}</a>
         </div>
       {% endif %}
     {% endfor %}

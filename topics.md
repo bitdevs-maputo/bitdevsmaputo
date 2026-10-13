@@ -1,11 +1,14 @@
 ---
 layout: default
+title: "Onde Encontrar Temas | Where to Find Topics"
+description: "Fontes sugeridas, repositórios e newsletters para temas de discussão dos Seminários Socráticos da BitDevs Maputo."
+image: /assets/img/og-preview.png
 ---
 
 #### Where to Find Topics for Future Seminars
 
 Below is a list of suggested places to find interesting socratic seminar topics to discuss at
-BitDevs Cotonou meetups. If you have any others to add to the list let us know.
+BitDevs Maputo meetups. If you have any others to add to the list let us know.
 
 ### Mailing Lists, News Letters, Q&As
 
@@ -28,6 +31,7 @@ BitDevs Cotonou meetups. If you have any others to add to the list let us know.
 
 ### Other Meetups
 
+- [Bitdevs Maputo](https://x.com/BitdevsMaputo)
 - [BitdevsNBO](https://bitdevsnbo.org)
 - [BitdevsLagos](https://bitdevslagos.org/)
 - [Bitcoin Core Review Club](https://bitcoincore.reviews/)
@@ -44,7 +48,7 @@ BitDevs Cotonou meetups. If you have any others to add to the list let us know.
 - [BitDevs Vancouver](https://bitdevs.ca/)
 - [Bitdevs Cotonou](https://x.com/BitdevsCotonou)
 
-### [Freenode IRC](https://freenode.net/)
+### IRC & Communities
 
 - #bitcoin-core-pr-reviews
-- #bitcore-core-dev
+- #bitcoin-core-dev

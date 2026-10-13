@@ -1,5 +1,8 @@
 ---
 layout: default
+title: "About"
+description: "BitDevs Maputo is a community in Mozambique dedicated to the research, development, and practical application of Bitcoin, Nostr, and open protocols."
+image: /assets/img/og-preview.png
 lang: en
 ---
 

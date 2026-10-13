@@ -1,5 +1,8 @@
 ---
 layout: default
+title: "BitDevs Maputo"
+description: "BitDevs Maputo é uma comunidade em Maputo, Moçambique, para desenvolvedores, pesquisadores e entusiastas interessados na pesquisa, desenvolvimento e aplicação prática do Bitcoin, Nostr e protocolos relacionados."
+image: /assets/img/og-preview.png
 lang: pt
 ---
 
@@ -15,18 +18,20 @@ lang: pt
      
       {% assign filtered_posts = site.posts | where: "lang", page.lang %}
     {% for post in filtered_posts %}
-            {% if post.type == "socratic" or post.type == "whitepaper" %}
-                <div class="Home-posts-post">
-                    <span class="Home-posts-post-date">{{ post.date | date_to_string }}</span>
-                    <span class="Home-posts-post-arrow">&raquo;</span>
-                    <a class="Home-posts-post-title" href="{{ post.url }}">{{ post.title }}</a>
-                </div>
-                {% assign counter = counter | plus: 1 %}
-                {% if counter == event_posts %}
-                    {% break %} {% comment %}exit the for loop{% endcomment %}
+            {% if post.category == "event" %}
+                {% if post.type == "socratic" or post.type == "whitepaper" %}
+                    <div class="Home-posts-post">
+                        <span class="Home-posts-post-date">{{ post.date | date_to_string }}</span>
+                        <span class="Home-posts-post-arrow">&raquo;</span>
+                        <a class="Home-posts-post-title" href="{{ post.url }}">{{ post.title }}</a>
+                    </div>
+                    {% assign counter = counter | plus: 1 %}
+                    {% if counter == event_posts %}
+                        {% break %} {% comment %}exit the for loop{% endcomment %}
+                    {% endif %}
                 {% endif %}
             {% endif %}
     {% endfor %}
-      <p><a href="/events.html">{{ site.data.i18n[page.lang].common.read_more }}</a></p>
+      <p><a href="/pt/events">{{ site.data.i18n[page.lang].common.read_more }}</a></p>
     </div>
 </div>

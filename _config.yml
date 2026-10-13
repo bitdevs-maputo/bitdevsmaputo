@@ -1,9 +1,9 @@
 # Build settings
 markdown: kramdown
 highlighter: rouge
-collections : 
-  posts: 
-    output: true 
+collections:
+  posts:
+    output: true
     permalink: /:categories/:year-:month-:day-:title
 
 plugins: [jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
@@ -12,29 +12,97 @@ sass:
   sass_dir: assets/css
   style: compressed
 
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title: "BitDevs Cotonou"
-description: "BitDevs Cotonou is a community in Cotonou, Benin, for developers, researchers, and enthusiasts interested in the research, development, and practical application of Bitcoin, Nostr, and related protocols. We host discussions, workshops, and collaborative projects to advance knowledge and adoption of these technologies."
+# Site SEO & Identity Metadata
+url: "https://bitdevsmaputo.org"
+title: "BitDevs Maputo"
+tagline: "Comunidade Bitcoin & Nostr em Moçambique"
+description: "BitDevs Maputo é uma comunidade em Maputo, Moçambique, para desenvolvedores, pesquisadores e entusiastas interessados no desenvolvimento e aplicação prática do Bitcoin, Nostr e protocolos relacionados."
+image: "/assets/img/og-preview.png"
+logo: "/favicon.ico"
+locale: "pt_MZ"
 
-# Leave out some files
-exclude: ["README.md", "Gemfile", "Gemfile.lock", ".sass-cache"]
+# Social links & Twitter Card
+twitter:
+  username: BitdevsMaputo
+  card: summary_large_image
+
+social:
+  name: "BitDevs Maputo"
+  links:
+    - https://x.com/BitdevsMaputo
+    - https://github.com/bitdevs-maputo
+    - https://discord.gg/vQdkbePvZ
+
+# Leave out files
+exclude: ["README.md", "Gemfile", "Gemfile.lock", ".sass-cache", "vendor", ".bundle", "Dockerfile", "docker-compose.yml", "Makefile"]
 
 future: true
 
-# implementing i18n for EN | PT 
+# Implementing i18n for EN | PT
 languages: ["en", "pt"]
-default_lang : "en"
-exclude_from_localizations: ["assets", "css", "js", "img","fonts"]
+default_lang: "en"
+exclude_from_localizations: ["assets", "css", "js", "img", "fonts"]
 
-# defaults configs 
+# Defaults configs
 defaults:
+  - scope:
+      path: ""
+    values:
+      image: "/assets/img/og-preview.png"
+  - scope:
+      path: "pt"
+    values:
+      lang: "pt"
+      locale: "pt_MZ"
+      image: "/assets/img/og-preview.png"
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+      locale: "en_US"
+      image: "/assets/img/og-preview.png"
   - scope:
       path: "_posts"
     values:
       lang: "en"
-      category: "en"
+      category: "event"
+      locale: "en_US"
+      image: "/assets/img/og-preview.png"
   - scope:
-      path: "_posts/pt"
+      path: "_posts/events"
+    values:
+      category: "event"
+      image: "/assets/img/og-preview.png"
+  - scope:
+      path: "_posts/events/en"
+    values:
+      lang: "en"
+      category: "event"
+      locale: "en_US"
+      image: "/assets/img/og-preview.png"
+  - scope:
+      path: "_posts/events/pt"
     values:
       lang: "pt"
-      category: "pt"
+      category: "event"
+      locale: "pt_MZ"
+      image: "/assets/img/og-preview.png"
+  - scope:
+      path: "_posts/blog"
+    values:
+      category: "blog"
+      image: "/assets/img/og-preview.png"
+  - scope:
+      path: "_posts/blog/en"
+    values:
+      lang: "en"
+      category: "blog"
+      locale: "en_US"
+      image: "/assets/img/og-preview.png"
+  - scope:
+      path: "_posts/blog/pt"
+    values:
+      lang: "pt"
+      category: "blog"
+      locale: "pt_MZ"
+      image: "/assets/img/og-preview.png"

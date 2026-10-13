@@ -1,5 +1,8 @@
 ---
 layout: default
+title: "Patrocinadores | Sponsors"
+description: "Apoiadores e parceiros que tornam possíveis os encontros e eventos da BitDevs Maputo."
+image: /assets/img/og-preview.png
 ---
 
 Special thanks to to our sponsors who's donations help pay for venue rental, pizza, drinks, and other meetup expenses.
