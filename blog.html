@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog
+description: "Blog posts and articles from the BitDevs Maputo community."
+image: /assets/img/og-preview.png
+---
+
+<div class="Home">
+  <div class="Home-posts">
+    <h2 class="Home-posts-title">Blog</h2>
+    {% for post in site.posts %}
+      {% if post.category == "blog" %}
+        <div class="Home-posts-post">
+          <span class="Home-posts-post-date">{{ post.date | date_to_string }}</span>
+          <span class="Home-posts-post-arrow">&raquo;</span>
+          <a class="Home-posts-post-title" href="{{ post.url }}">{{ post.title }}</a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
