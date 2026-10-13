@@ -4,6 +4,8 @@ published: true
 date: 2026-08-29
 type: socratic
 title: "Back to 2008 - O Início da Revolução"
+description: "Encontro BitDevs Maputo: Back to 2008 - O Início da Revolução. Explorando o Whitepaper do Bitcoin de Satoshi Nakamoto e o dinheiro eletrónico ponto a ponto."
+image: /assets/img/og-preview.png
 meetup: "https://luma.com/ocjm8g7p"
 permalink: /pt/2026-08-29-bitdevs-maputo-back-to-2008
 lang: "pt"

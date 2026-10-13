@@ -4,8 +4,10 @@ published: true
 date: 2026-10-17
 type: socratic
 title: "Seminário Socrático 01: Quem manda realmente no Bitcoin?"
+description: "Primeiro Seminário Socrático da BitDevs Maputo no Hotel Onomo: quem manda realmente no Bitcoin? Rodando Bitcoin Core nos laptops, chaves e transações."
+image: /assets/img/og-preview.png
 meetup: "https://luma.com/znp0x852"
-permalink: /pt/2026-10-17-seminário-socrático-01.md
+permalink: /pt/2026-10-17-socratic-seminar-01
 lang: "pt"
 ---
 

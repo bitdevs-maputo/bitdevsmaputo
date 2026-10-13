@@ -6,6 +6,8 @@ type: socratic
 lang: "en"
 permalink: /en/2026-03-07-bitdevs-maputo-bitcoin-meetup-anita
 title: "BitDevs Maputo - Bitcoin Meet-up with Anita in Maputo"
+description: "BitDevs Maputo kick-off workshop with Anita Posch at Hotel Onomo: introducing the BitDevs format and building the technical Bitcoin community in Mozambique."
+image: /assets/img/og-preview.png
 meetup: "https://lu.ma/0vqvo5oc"
 ---
 
