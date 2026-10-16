@@ -1,0 +1,368 @@
+---
+layout: post
+published: true
+date: 2026-10-08
+title: "HD Wallets and Descriptor Wallets: The Evolution of Address Generation in Bitcoin Core"
+description: "The evolution of wallet key management in Bitcoin Core: from isolated keys to BIP32/BIP44 HD wallets and modern output script descriptors."
+image: /assets/img/og-preview.png
+lang: "en"
+category: "blog"
+permalink: /en/blog/hd-wallets
+---
+## HD Wallets and Descriptor Wallets: The Evolution of Address Generation in Bitcoin Core
+
+by Rafael Santos
+
+When examining how wallets are structured in Bitcoin Core, we see significant evolution over time. In early versions, each new address was generated independently and stored directly in the `wallet.dat` file, without any hierarchical relationship between them. This meant the wallet had to track each private key individually, making backups and recovery in the event of data loss difficult.
+
+This limitation was overcome with the introduction of **Hierarchical Deterministic Wallets (HD Wallets)** via BIP32. In this model, instead of generating independent private keys, the wallet generates all keys from a single master key derived from a random seed. This hierarchical structure makes it possible to deterministically derive an infinite number of addresses in a standardized way from a single point of origin. This brought two main advantages: **backups became much simpler**, as storing the seed or master key was all that was needed, and **addresses could be organized into derivation trees**, allowing accounts, coins, and address types to be clearly separated.
+Complementing the HD wallet concept introduced in BIP32, BIP44 established a formal definition for address derivation paths. From that point on, a standard existed to generate different addresses in an organized manner from a single master key.
+**Formally**, the address derivation path is structured as:
+
+`m / purpose' / coin_type' / account' / change / address_index`, where:
+
+**m**
+
+- master private key (root, derived from the seed).
+
+**purpose'**
+
+- 44' -> Legacy (P2PKH)
+- 49' -> P2SH-SegWit
+- 84' -> Native SegWit (Bech32)
+- 86' -> Taproot
+
+**coin_type'**
+
+- 0' -> Bitcoin Mainnet
+- 1' -> Bitcoin Testnet/Signet/Regtest
+
+**account'**
+
+- Used to separate logical accounts (typically 0'). It provides a way to assign semantic meaning to account organization. For instance, a wallet could have one account for company A, another for company B, and another for personal use.
+
+**change**
+
+- 0 -> external addresses (receiving)
+- 1 -> internal addresses (change)
+
+**address_index**
+
+- The sequential index (0, 1, 2, ...) used to generate each address.
+
+The **`'` (apostrophe)** indicates *hardened* derivation. This means the next level of the tree can only be derived using the private key, preventing anyone with access only to the xpub (extended public key) from deriving these child keys. This hardened property is applied to the first three levels of the path (purpose', coin_type', and account'), safeguarding the wallet's core structure.
+For example, to generate Native SegWit (Bech32) addresses on signet, the full derivation path would be:
+
+```bash
+m/84'/1'/0'/0/0   → first external address (receiving)
+m/84'/1'/0'/1/0   → first internal address (change)
+```
+
+## Descriptor Wallets
+
+In modern Bitcoin Core, this information is represented using **output script descriptors** (or wallet descriptors), which formalize how addresses are derived from the master key, including the script type (P2PKH, P2WPKH, Taproot, etc.), derivation paths, and even validation checksums.
+
+In other words, descriptors are how Bitcoin Core represents and stores **derivation metadata**, turning the theoretical tree structure (BIP32/BIP44) into something concrete and verifiable inside the wallet. Descriptors enable Bitcoin Core to **generate new addresses whenever needed** in a standardized manner, ensuring consistency and security.
+
+Here is the formal structure of a descriptor:
+
+```xml
+<descriptor> = <script_function>([<fingerprint>/<derivation_path>]<key_expression>/<branch>/*)<checksum>
+```
+
+Where:
+
+- **`<script_function>`**
+    
+    Defines the script/address type:
+    
+    - `pkh()` → P2PKH (Legacy)
+    - `sh(wpkh())` → P2SH-SegWit (compatibility)
+    - `wpkh()` → P2WPKH (Native SegWit, Bech32)
+    - `tr()` → P2TR (Taproot, Bech32m)
+    - `wsh(sortedmulti(...))` → Multisig SegWit
+- **`<fingerprint>`**
+    
+    4 hex bytes of the hash160 of the master pubkey (identifies the root master key).
+    
+- **`<derivation_path>`**
+    
+    BIP32/BIP44 format path: `purpose'/coin_type'/account'`.
+    
+- **`<key_expression>`**
+    
+    Can be:
+    
+    - an extended key (`xpub`, `xprv`, `tpub`, `tprv`, etc.),
+    - or an individual public/private key.
+- **`<branch>`**
+    
+    Specifies external (`0`) or internal/change (`1`).
+    
+- `*`
+    
+    Denotes the derivation index range (e.g., 0..999).
+    
+- **`<checksum>`**
+    
+    8 characters generated by `getdescriptorinfo`, ensuring descriptor integrity.
+
+Looking at an example:
+
+**wpkh**([**F23ABCD1/84h/1h/0h**]**xpub6CUGRU...xyz/0/***)**#r0t3u4**
+
+Where the components are:
+
+- **Script function** – defines the address/script type
+    - wpkh() → Native SegWit (P2WPKH, Bech32 "bc1q...", "tb1q...", or "sb1q...")
+- **Key origin** [fingerprint/path] (optional but recommended)
+    - `F23ABCD1` is the 4-byte master key *fingerprint*.
+    - The path `84h/1h/0h` (BIP84 example) explicitly shows **which account** is being used.
+    - **Coin**: **1h testnet/signet**.
+    - **Account**: 0h
+- **Key expression** (xpub/xprv, tpub/vpub on testnets)
+    - The **xpub6CUGRU...xyz** is the root of the address family. Only when combined with the final derivation (/0/* or /1/*) does it generate concrete addresses.
+- **Final derivation (external, wildcard index) /0/*** – `*` represents the index; the wallet activates a **range** (e.g., [0,999]).
+    - /0/* → bc1q... (external/receiving addresses)
+    - The `*` is the **variable index**, replaced by 0, 1, 2, ... as new addresses are requested (`getnewaddress`).
+- **Checksum** – suffix **#r0t3u4**
+    - Almost all RPC methods require the checksum.
+
+The `h` in the descriptor is equivalent to the **`'` (apostrophe)** in derivation paths, indicating *hardened* derivation.
+
+To better understand how descriptors operate in practice, it helps to step back and examine **how keys are derived from the seed** that creates the wallet. Below, we trace the process connecting the initial seed to extended keys (xprv/xpub), passing through the master private key, the corresponding master public key, and the fingerprint.
+
+![Process](./img1_art5_v3.jpg)
+
+As shown in the diagram, the process unfolds as follows:
+
+- **Seed (128/256 bits of entropy)**
+    - The wallet starts by generating a **random seed**.
+    - This seed serves as the foundational entropy for the wallet.
+- **HMAC-SHA512("Bitcoin seed", seed) → (m, c)**
+    - The seed is processed through HMAC-SHA512 using the literal string `"Bitcoin seed"` as the HMAC key.
+    - The resulting 512-bit output is split into two 256-bit halves:
+        - **m** = Master Private Key (a scalar integer acting as the root private key).
+        - **c** = Chain Code (32 bytes providing extra entropy for the derivation tree).
+- **Master Public Key (M)**
+    - From the master private key **m**, the master public key **M** is computed by multiplying scalar `m` by the elliptic curve base generator point `G` on secp256k1 (M = m·G).
+- **Fingerprint**
+    - From the master public key **M**, the HASH160 (SHA256 followed by RIPEMD160) is computed.
+    - The **first 4 bytes** of this hash form the **fingerprint**, used in descriptors to identify the root key source.
+- **Extended Root Keys**
+    - Combining the **private key (m)**, the **chain code (c)**, and metadata (depth, child index, parent fingerprint, and network version bytes) produces the **root extended keys**.
+    - Being at the root, their parameters are **depth=0, index=0, parentFP=00000000**.
+- **xprv / tprv** (Extended Private Key)
+    - The serialization of private key **m** alongside its chain code and metadata.
+    - Uses the `xprv` prefix on mainnet and `tprv` on testnet/signet.
+    - Contains private material, granting spending authority over funds.
+- **xpub / tpub** (Extended Public Key)
+    - Derived directly from the **xprv** by replacing the private key with the master public key **M**.
+    - Carries the identical chain code and metadata.
+    - Uses the `xpub` prefix on mainnet and `tpub` on testnet/signet.
+    - Safe to share for watch-only wallets: it can derive addresses without spending capability.
+
+Now let's see this in action using Bitcoin Core!
+
+We create a wallet:
+
+```bash
+bitcoin-cli -datadir="." createwallet "MinhaCarteira"
+```
+
+Immediately upon creation, this wallet contains a set of **active descriptors**. To list them, run:
+
+```bash
+bitcoin-cli -datadir="." -rpcwallet=MinhaCarteira listdescriptors
+```
+
+Which yields the following output:
+
+```bash
+{
+  "wallet_name": "MinhaCarteira",
+  "descriptors": [
+    {
+      "desc": "pkh([44026f8b/44h/1h/0h]tpubDDWFDcF3TZLSxKJFenAL3c1aVAF441AfZthX7F3E9fqtGw3FpMMpUJrYQ5P4TTQPvRj2aWtueV5SH7ZXoNRN6s2z2manaQRs5ysUjAK6WM6/0/*)#j8lxna7j",
+      "timestamp": 1755864669,
+      "active": true,
+      "internal": false,
+      "range": [
+        0,
+        999
+      ],
+      "next": 0,
+      "next_index": 0
+    },
+    {
+      "desc": "pkh([44026f8b/44h/1h/0h]tpubDDWFDcF3TZLSxKJFenAL3c1aVAF441AfZthX7F3E9fqtGw3FpMMpUJrYQ5P4TTQPvRj2aWtueV5SH7ZXoNRN6s2z2manaQRs5ysUjAK6WM6/1/*)#rn68wgw2",
+      "timestamp": 1755864669,
+      "active": true,
+      "internal": true,
+      "range": [
+        0,
+        999
+      ],
+      "next": 0,
+      "next_index": 0
+    },
+    {
+      "desc": "sh(wpkh([44026f8b/49h/1h/0h]tpubDDCTFFtooJWfiS2sZp8kSAno8YjSBVZZZUKq6nTkLeAhc1qTTW1jQzrJWqEAQDjrXUL9TVia6oX7yrQkdetWwVHghmMm4tgkNbeW6v3SVoh/0/*))#n66qdd6h",
+      "timestamp": 1755864669,
+      "active": true,
+      "internal": false,
+      "range": [
+        0,
+        999
+      ],
+      "next": 0,
+      "next_index": 0
+    },
+    {
+      "desc": "sh(wpkh([44026f8b/49h/1h/0h]tpubDDCTFFtooJWfiS2sZp8kSAno8YjSBVZZZUKq6nTkLeAhc1qTTW1jQzrJWqEAQDjrXUL9TVia6oX7yrQkdetWwVHghmMm4tgkNbeW6v3SVoh/1/*))#xm5k4j0g",
+      "timestamp": 1755864669,
+      "active": true,
+      "internal": true,
+      "range": [
+        0,
+        999
+      ],
+      "next": 0,
+      "next_index": 0
+    },
+    {
+      "desc": "tr([44026f8b/86h/1h/0h]tpubDDDZqVE9qnFZxS8jBR6pnEuwFEnnomPU8B7vDGLD3H3fXtkAtXwpkkddoTf38Ltz7TPuZbGtx1YMAEEacnx6Yt4ib8hrveN1iSjXZH77pFh/0/*)#3h0axe97",
+      "timestamp": 1755864669,
+      "active": true,
+      "internal": false,
+      "range": [
+        0,
+        999
+      ],
+      "next": 0,
+      "next_index": 0
+    },
+    {
+      "desc": "tr([44026f8b/86h/1h/0h]tpubDDDZqVE9qnFZxS8jBR6pnEuwFEnnomPU8B7vDGLD3H3fXtkAtXwpkkddoTf38Ltz7TPuZbGtx1YMAEEacnx6Yt4ib8hrveN1iSjXZH77pFh/1/*)#qr2umv4x",
+      "timestamp": 1755864669,
+      "active": true,
+      "internal": true,
+      "range": [
+        0,
+        999
+      ],
+      "next": 0,
+      "next_index": 0
+    },
+    {
+      "desc": "wpkh([44026f8b/84h/1h/0h]tpubDCd8PW7rDNVWeYt1LRFG5EdkGC1DQuBHhT4HBhPx42nc3uueBYwujHxAtDQtpvFAx2bbCGKiNBVs1WBn4d9Y1udR8HEGGSznfaUrwGYbkEe/0/*)#my5eel6x",
+      "timestamp": 1755864669,
+      "active": true,
+      "internal": false,
+      "range": [
+        0,
+        999
+      ],
+      "next": 0,
+      "next_index": 0
+    },
+    {
+      "desc": "wpkh([44026f8b/84h/1h/0h]tpubDCd8PW7rDNVWeYt1LRFG5EdkGC1DQuBHhT4HBhPx42nc3uueBYwujHxAtDQtpvFAx2bbCGKiNBVs1WBn4d9Y1udR8HEGGSznfaUrwGYbkEe/1/*)#2s3cy227",
+      "timestamp": 1755864669,
+      "active": true,
+      "internal": true,
+      "range": [
+        0,
+        999
+      ],
+      "next": 0,
+      "next_index": 0
+    }
+  ]
+}
+```
+
+The output shows that Bitcoin Core automatically creates **8 descriptors**:
+
+- 2 for **Legacy (BIP44)** — external (receiving) and internal (change).
+- 2 for **P2SH-SegWit (BIP49)** — external and internal.
+- 2 for **Native SegWit / Bech32 (BIP84)** — external and internal.
+- 2 for **Taproot (BIP86)** — external and internal.
+
+In other words, each modern address type is provisioned with its two derivation branches (receiving and change).
+
+As an example, let's look at one of the automatically created descriptors:
+
+```bash
+{
+  "desc": "sh(wpkh([44026f8b/49h/1h/0h]tpubDDCTFFtooJWfiS2sZp8kSAno8YjSBVZZZUKq6nTkLeAhc1qTTW1jQzrJWqEAQDjrXUL9TVia6oX7yrQkdetWwVHghmMm4tgkNbeW6v3SVoh/0/*))#n66qdd6h",
+  "timestamp": 1755864669,
+  "active": true,
+  "internal": false,
+  "range": [0, 999],
+  "next": 0,
+  "next_index": 0
+}
+```
+
+This descriptor breaks down into:
+
+1. **`sh(wpkh(...))`**
+    - Indicates this branch uses **P2SH-SegWit (BIP49)**.
+    - In practice, it produces addresses starting with `3...` on mainnet or `2...` on testnet.
+2. **`[44026f8b/49h/1h/0h]`**
+    - `44026f8b` is the **fingerprint** of the wallet's master key.
+    - The path `/49h/1h/0h` adheres to BIP49:
+        - `49h` → purpose (P2SH-SegWit).
+        - `1h` → coin type (testnet/signet).
+        - `0h` → account 0.
+3. **`tpubDDCTF...SVoh`**
+    - The **extended public key (tpub)** for account `m/49'/1'/0'`.
+    - From this key, Bitcoin Core can derive all child addresses along this branch.
+4. **`/0/*`**
+    - Specifies the **external branch** (`0` = receiving addresses).
+    - The `*` represents the sequential child index (`0, 1, 2, ...`).
+5. **`#n66qdd6h`**
+    - The descriptor's **checksum**, used to verify its integrity.
+6. **Additional metadata**
+    - `"internal": false` → external branch (receiving).
+    - `"range": [0,999]` → pre-derives up to 1,000 addresses within the active keypool.
+    - `"next_index": 0` → the next address to dispense will use index 0.
+
+Thus, in a single compact string, the descriptor encapsulates **what type of address to generate, the key origin, the derivation path, the branch (external/internal), and a self-verifying checksum**.
+
+Notice that all eight descriptors shown above appear in **tpub** format, meaning they represent only the wallet's **extended public keys**. By default, `listdescriptors` returns only the public version of descriptors—sufficient for deriving addresses, but incapable of signing or spending funds. To inspect the **private descriptors** (in `tprv` format), supply the optional boolean argument `true`:
+
+```bash
+bitcoin-cli -datadir="." -rpcwallet=MinhaCarteira listdescriptors true
+```
+
+This reveals the extended private keys, which provide the signing capability needed to spend the bitcoin associated with the wallet.
+
+In practice, this set of descriptors is what allows Bitcoin Core to generate new addresses on demand. For example, when executing:
+
+```bash
+bitcoin-cli -datadir="." -rpcwallet=MinhaCarteira getnewaddress
+```
+
+Core does not generate a new descriptor. Instead, it inspects the **active external descriptor** (by default, Native SegWit Bech32, `wpkh(...)`), checks the next available index (`next_index`) within the configured range, and derives the corresponding address. Thus, `getnewaddress` is simply a direct application of the derivation tree defined by the wallet's descriptors.
+
+Running the command above returned:
+
+```bash
+tb1qznwx8w3sy646kajznvu39ulaf32shury3kgm26
+```
+
+This address did not appear out of thin air: it was derived directly from one of the active wallet descriptors—specifically, the **Native SegWit Bech32 (BIP84)** descriptor:
+
+```bash
+wpkh([fingerprint/84h/1h/0h]tpub.../0/*)#checksum
+```
+
+Bitcoin Core took index `0` from the external branch `(/0/*)` of that descriptor, evaluated the derivation function, and produced the address `tb1qznwx...`. Running the command again will draw the next address from the same descriptor at index `1`, and so on.
+
+---
+
+In summary, HD wallets introduced the deterministic foundation for structured address generation, while output script descriptors refined this model into a standardized, explicit, and auditable framework for wallet management in Bitcoin Core. Today, every new address generated via `getnewaddress` relies on this layered architecture of seeds, extended keys, fingerprints, and descriptors. Understanding this workflow is essential not only to mastering address management in Bitcoin Core, but also to appreciating how Bitcoin wallet architecture evolved into a more secure, interoperable, and resilient standard.
+
+---
