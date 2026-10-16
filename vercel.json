@@ -1,6 +1,9 @@
 {
+  "installCommand": "bundle install",
+  "buildCommand": "bundle exec jekyll build",
+  "outputDirectory": "_site",
   "routes": [
-      { "src": "/(.*)/", "dest": "/$1/index.html" },
-      { "src": "/(.*)", "dest": "/$1.html" }
-    ]
+    { "src": "/(.*)/", "dest": "/$1/index.html" },
+    { "src": "/(.*)", "dest": "/$1.html" }
+  ]
 }

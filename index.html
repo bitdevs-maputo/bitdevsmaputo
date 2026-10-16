@@ -1,23 +1,60 @@
 ---
 layout: default
 title: "BitDevs Maputo"
-description: "BitDevs Maputo é uma comunidade em Maputo, Moçambique, para desenvolvedores, pesquisadores e entusiastas interessados no desenvolvimento e aplicação prática do Bitcoin, Nostr e protocolos relacionados."
+description: "BitDevs Maputo is a community in Maputo, Mozambique, for developers, researchers, and enthusiasts interested in the research, development, and practical application of Bitcoin, Nostr, and related protocols."
 image: /assets/img/og-preview.png
+lang: en
 ---
 
-{% assign default_lang = site.default_lang | default: "pt" %}
+<div class="Home">
+  <h1 class="Home-title">BitDevs Maputo</h1>
 
-<script>
-  var userLang = navigator.language || navigator.userLanguage;
-  var lang = (userLang || '').split('-')[0];
+  <p class="Home-about">
+    BitDevs Maputo is a community for developers, researchers, and enthusiasts interested in discussing and participating in the research and development of Bitcoin, Nostr, and related protocols.
+  </p>
 
-  var supportedLangs = ['en', 'pt'];
-  var targetLang = supportedLangs.includes(lang) ? lang : '{{ default_lang }}';
+  <div class="Home-posts">
+    <h2 class="Home-posts-title">Upcoming and Recent Events in Maputo:</h2>
+    {% assign event_posts = 7 %}
+    {% assign counter = 0 %}
+    {% assign filtered_posts = site.posts | where: "lang", page.lang %}
 
-  window.location.href = '/' + targetLang + '/';
-</script>
+    {% for post in filtered_posts %}
+      {% if post.category == "event" %}
+        {% if post.type == "socratic" or post.type == "whitepaper" %}
+          <div class="Home-posts-post">
+            <span class="Home-posts-post-date">{{ post.date | date_to_string }}</span>
+            <span class="Home-posts-post-arrow">&raquo;</span>
+            <a class="Home-posts-post-title" href="{{ post.url }}">{{ post.title }}</a>
+          </div>
+          {% assign counter = counter | plus: 1 %}
+          {% if counter == event_posts %}
+            {% break %} {% comment %}exit the for loop{% endcomment %}
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
 
-<noscript>
-  <meta http-equiv="refresh" content="0;url=/pt/">
-  <p>Redirecionando para / Redirecting to <a href="/pt/">BitDevs Maputo (Português)</a> ou <a href="/en/">BitDevs Maputo (English)</a>.</p>
-</noscript>
+    <p><a href="/en/events">See all events</a></p>
+  </div>
+
+  <div class="Home-posts">
+    <h2 class="Home-posts-title">Recent Blog Posts</h2>
+    {% assign blog_posts = 0 %}
+    {% for post in filtered_posts %}
+      {% if post.category == "blog" %}
+        <div class="Home-posts-post">
+          <span class="Home-posts-post-date">{{ post.date | date_to_string }}</span>
+          <span class="Home-posts-post-arrow">&raquo;</span>
+          <a class="Home-posts-post-title" href="{{ post.url }}">{{ post.title }}</a>
+        </div>
+        {% assign blog_posts = blog_posts | plus: 1 %}
+        {% if blog_posts == 3 %}
+          {% break %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    <p><a href="/en/blog">See all blog posts</a></p>
+  </div>
+</div>

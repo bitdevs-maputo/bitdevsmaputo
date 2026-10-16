@@ -1,6 +1,6 @@
 
 services:
-  bitdevscotonou : 
+  bitdevsmaputo: 
     build: 
       context: .
       dockerfile: ./Dockerfile
