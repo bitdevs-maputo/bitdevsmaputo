@@ -15,11 +15,10 @@ sass:
 # Site SEO & Identity Metadata
 url: "https://bitdevsmaputo.org"
 title: "BitDevs Maputo"
-tagline: "Comunidade Bitcoin & Nostr em Moçambique"
 description: "BitDevs Maputo é uma comunidade em Maputo, Moçambique, para desenvolvedores, pesquisadores e entusiastas interessados no desenvolvimento e aplicação prática do Bitcoin, Nostr e protocolos relacionados."
 image: "/assets/img/og-preview.png"
 logo: "/favicon.ico"
-locale: "pt_MZ"
+locale: "en_MZ"
 
 # Social links & Twitter Card
 twitter:
@@ -32,6 +31,7 @@ social:
     - https://x.com/BitdevsMaputo
     - https://github.com/bitdevs-maputo
     - https://discord.gg/vQdkbePvZ
+    - https://primal.net/p/nprofile1qqs05scu8svcjjcv23cg56tdgmgle28ptlu9f92uzwym7tlhukwlvwgktefjj
 
 # Leave out files
 exclude: ["README.md", "Gemfile", "Gemfile.lock", ".sass-cache", "vendor", ".bundle", "Dockerfile", "docker-compose.yml", "Makefile"]

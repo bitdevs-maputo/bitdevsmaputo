@@ -7,6 +7,8 @@
       url: "/en/blog"
     - name: "Contacts"
       url: "/en/contacts"
+    - name: "Security"
+      url: "/security"
 
 common:
   read_more: "Read More"
